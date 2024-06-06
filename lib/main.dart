@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/pages/weather_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+       home: WeatherPage());
   }
 }
